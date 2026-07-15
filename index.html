@@ -3,20 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FindMyTeacher — Find the Right Tutor, Anywhere in India</title>
+<title>FindMyTeacher Agency | Find Verified Tutors & Teachers Across India — Founded by Ayush Pandey</title>
+<meta name="description" content="FindMyTeacher Agency, founded by Ayush Pandey in 2026, is India's tutor-matching platform connecting students, parents and teachers across all 28 states and 8 union territories. Find a home tutor, online tutor, or teaching job near you.">
+<meta name="keywords" content="FindMyTeacher, FindMyTeacher Agency, Ayush Pandey, find a teacher India, find a tutor India, home tuition India, online tuition India, tutor near me, teaching jobs India, best tutor app India, state wise tutors India">
+<meta name="author" content="Ayush Pandey, Founder of FindMyTeacher Agency">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.findmyteacher.in/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FindMyTeacher Agency">
+<meta property="og:title" content="FindMyTeacher Agency | Find Verified Tutors & Teachers Across India">
+<meta property="og:description" content="Founded by Ayush Pandey in 2026, FindMyTeacher Agency connects students, parents and teachers across every Indian state and union territory.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FindMyTeacher Agency | Founded by Ayush Pandey">
+<meta name="twitter:description" content="India's tutor-matching platform — find verified teachers or students in your state.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "FindMyTeacher Agency",
+  "alternateName": "FindMyTeacher",
+  "url": "https://www.findmyteacher.in/",
+  "description": "FindMyTeacher Agency is India's tutor-matching platform connecting students, parents and teachers across all 28 states and 8 union territories.",
+  "foundingDate": "2026",
+  "founder": {
+    "@type": "Person",
+    "name": "Ayush Pandey",
+    "jobTitle": "Founder, FindMyTeacher Agency"
+  },
+  "areaServed": "IN",
+  "knowsAbout": ["Home Tuition", "Online Tutoring", "Teacher Recruitment", "Board Exam Coaching"]
+}
+</script>
 <style>
   :root{
-    --paper:#F6F1E2;
-    --paper-dark:#EAE2C9;
-    --ink:#23324D;
-    --chalkboard:#1F3D34;
-    --chalkboard-dark:#152A24;
-    --chalk:#F6F1E2;
-    --marigold:#E8A33D;
-    --marigold-dark:#C6832A;
-    --maroon:#A63446;
+    /* Tricolor theme: saffron + white + India green, with navy (Ashoka Chakra) as ink/dark tone */
+    --paper:#FFFCF6;
+    --paper-dark:#FCEFDC;
+    --ink:#10213B;
+    --chalkboard:#0B2447;         /* navy — hero/footer dark base */
+    --chalkboard-dark:#071A34;
+    --chalk:#FFFFFF;
+    --marigold:#FF9933;           /* saffron */
+    --marigold-dark:#E0791A;
+    --maroon:#0E8A3C;             /* India green (kept variable name for minimal code changes) */
     --font-display:'Kalam',cursive;
     --font-body:'Hind',sans-serif;
   }
@@ -62,8 +96,8 @@
   .btn-marigold:hover{background:#edb457;box-shadow:0 3px 0 var(--marigold-dark);transform:translateY(-1px);}
   .btn-outline{background:transparent;border:2px solid currentColor;color:inherit;padding:11px 22px;}
   .btn-outline:hover{background:rgba(255,255,255,.08);}
-  .btn-maroon{background:var(--maroon);color:var(--paper);box-shadow:0 3px 0 #7a2434;}
-  .btn-maroon:hover{background:#b93d50;}
+  .btn-maroon{background:var(--maroon);color:var(--paper);box-shadow:0 3px 0 #0A5C29;}
+  .btn-maroon:hover{background:#16A34A;}
   .btn-ghost-dark{background:transparent;color:var(--ink);border:2px solid var(--ink);padding:11px 20px;}
   .btn-ghost-dark:hover{background:var(--ink);color:var(--paper);}
   .btn-sm{padding:9px 16px;font-size:13.5px;}
@@ -74,10 +108,25 @@
   }
   .pill.active,.pill:hover{background:var(--ink);color:var(--paper);}
 
+  /* ---------- TRICOLOR BAR ---------- */
+  .tricolor-bar{
+    position:sticky;top:0;z-index:60;
+    height:7px;display:flex;
+    box-shadow:0 1px 3px rgba(0,0,0,.25);
+  }
+  .tricolor-bar .stripe{flex:1;}
+  .tricolor-bar .stripe.saffron{background:#FF9933;}
+  .tricolor-bar .stripe.white{background:#FFFFFF;position:relative;}
+  .tricolor-bar .stripe.green{background:#138808;}
+  .chakra-dot{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    width:11px;height:11px;
+  }
+
   /* ---------- HEADER ---------- */
   header{
-    position:sticky;top:0;z-index:50;
-    background:rgba(246,241,226,.92);
+    position:sticky;top:7px;z-index:50;
+    background:rgba(255,252,246,.92);
     backdrop-filter:blur(8px);
     border-bottom:2px solid var(--ink);
   }
@@ -218,7 +267,7 @@
 
   /* ---------- TEACH CTA ---------- */
   .teach-cta{
-    background:linear-gradient(120deg,var(--maroon),#7c2536);
+    background:linear-gradient(120deg,var(--maroon),#0A5C29);
     color:var(--paper);border-radius:22px;padding:52px 46px;
     display:flex;align-items:center;justify-content:space-between;gap:40px;
     flex-wrap:wrap;
@@ -398,12 +447,31 @@
 </style>
 </head>
 <body>
+<div class="tricolor-bar" aria-hidden="true">
+  <div class="stripe saffron"></div>
+  <div class="stripe white">
+    <svg class="chakra-dot" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#0B2447" stroke-width="4"/>
+      <g stroke="#0B2447" stroke-width="3">
+        <line x1="50" y1="6" x2="50" y2="94"/><line x1="6" y1="50" x2="94" y2="50"/>
+        <line x1="14.6" y1="14.6" x2="85.4" y2="85.4"/><line x1="85.4" y1="14.6" x2="14.6" y2="85.4"/>
+        <line x1="50" y1="6" x2="61" y2="18"/><line x1="94" y1="50" x2="82" y2="61"/>
+        <line x1="50" y1="94" x2="39" y2="82"/><line x1="6" y1="50" x2="18" y2="39"/>
+        <line x1="14.6" y1="14.6" x2="28" y2="20"/><line x1="85.4" y1="85.4" x2="72" y2="80"/>
+        <line x1="85.4" y1="14.6" x2="80" y2="28"/><line x1="14.6" y1="85.4" x2="20" y2="72"/>
+      </g>
+      <circle cx="50" cy="50" r="6" fill="#0B2447"/>
+    </svg>
+  </div>
+  <div class="stripe green"></div>
+</div>
 
 <header>
   <div class="nav wrap">
     <a href="#top" class="logo"><img src="data:image/webp;base64,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" alt="FindMyTeacher logo" class="logo-icon">FindMyTeacher</a>
     <nav class="nav-links">
       <a href="#find">Find a Tutor</a>
+      <a href="#vision">Our Vision</a>
       <a href="#how">How it Works</a>
       <a href="#subjects">Subjects</a>
       <a href="#states">States</a>
@@ -419,6 +487,7 @@
   </div>
   <div id="mnav" style="display:none;flex-direction:column;gap:14px;padding:0 24px 20px;font-weight:600;">
     <a href="#find" onclick="closeMnav()">Find a Tutor</a>
+    <a href="#vision" onclick="closeMnav()">Our Vision</a>
     <a href="#how" onclick="closeMnav()">How it Works</a>
     <a href="#subjects" onclick="closeMnav()">Subjects</a>
     <a href="#states" onclick="closeMnav()">States</a>
@@ -474,14 +543,52 @@
     <div class="founder-text reveal" style="transition-delay:.1s;">
       <span class="eyebrow">Our story</span>
       <h2>Built on one simple idea</h2>
-      <p>FindMyTeacher was founded by <strong>Ayush Pandey</strong> in <strong>2026</strong>, out of a simple belief: every student in India — in every state, in every city and small town — deserves access to a teacher who actually fits how they learn.</p>
+      <p><strong>FindMyTeacher Agency</strong> was founded by <strong>Ayush Pandey</strong> in <strong>2026</strong>, out of a simple belief: every student in India — in every state, in every city and small town — deserves access to a teacher who actually fits how they learn.</p>
       <p>What started as an idea to connect local tutors with nearby students has grown into a platform built to serve both sides of the classroom: parents and students searching for the right teacher, and teachers looking for students who need them.</p>
       <p class="founder-signature">Ayush Pandey</p>
-      <span class="founder-role">Founder, FindMyTeacher</span>
+      <span class="founder-role">Founder &amp; CEO, FindMyTeacher Agency</span>
       <div class="founder-meta">
         <span class="founder-chip">🎓 Founded 2026</span>
         <span class="founder-chip">🇮🇳 Made in India</span>
         <span class="founder-chip">✦ Connect · Learn · Grow</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vision" style="background:var(--paper-dark);position:relative;overflow:hidden;">
+  <svg aria-hidden="true" style="position:absolute;top:-60px;right:-60px;width:280px;height:280px;opacity:.06;" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="46" fill="none" stroke="#0B2447" stroke-width="3"/>
+    <g stroke="#0B2447" stroke-width="2">
+      <line x1="50" y1="4" x2="50" y2="96"/><line x1="4" y1="50" x2="96" y2="50"/>
+      <line x1="15" y1="15" x2="85" y2="85"/><line x1="85" y1="15" x2="15" y2="85"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our vision</span>
+      <h2>Shiksha har ghar tak — education to every home</h2>
+      <p>FindMyTeacher Agency, founded by Ayush Pandey, exists to make finding a trustworthy tutor as easy in a small town as it is in a metro city.</p>
+    </div>
+    <div style="max-width:820px;text-align:center;margin:0 auto 44px;">
+      <p class="reveal" style="font-size:16.5px;color:#41504f;">Our vision is simple: an India where no student is held back by their pin code, and no qualified teacher is held back by a lack of students. Ayush Pandey started FindMyTeacher Agency to close that gap — connecting home tutors, online tutors and coaching experts with the families who need them, across all 28 states and 8 union territories. As FindMyTeacher Agency grows, the goal stays the same — one verified, well-matched teacher for every student in India who's looking for one.</p>
+    </div>
+    <div class="subject-grid" style="grid-template-columns:repeat(4,1fr);">
+      <div class="subject-tile reveal">
+        <div class="subject-badge">🎯</div>
+        <div><h4>Accessible to all</h4><span>Metros, small towns &amp; villages alike</span></div>
+      </div>
+      <div class="subject-tile reveal" style="transition-delay:.06s;">
+        <div class="subject-badge">✔</div>
+        <div><h4>Verified teachers</h4><span>Every profile checked before it goes live</span></div>
+      </div>
+      <div class="subject-tile reveal" style="transition-delay:.12s;">
+        <div class="subject-badge">🤝</div>
+        <div><h4>Fair for tutors</h4><span>Set your own fees, hours &amp; subjects</span></div>
+      </div>
+      <div class="subject-tile reveal" style="transition-delay:.18s;">
+        <div class="subject-badge">🇮🇳</div>
+        <div><h4>Truly pan-India</h4><span>All 28 states, 8 union territories</span></div>
       </div>
     </div>
   </div>
@@ -629,7 +736,7 @@
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 FindMyTeacher. Made for India 🇮🇳 — 28 states, 8 union territories.</span>
+      <span>© 2026 FindMyTeacher Agency, founded by Ayush Pandey. Made for India 🇮🇳 — 28 states, 8 union territories.</span>
       <span>Currently a demo experience — no real accounts are created.</span>
     </div>
   </div>
