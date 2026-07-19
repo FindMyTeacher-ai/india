@@ -42,13 +42,18 @@
 <meta property="og:site_name" content="FindMyTeacher Agency">
 <meta property="og:url" content="https://findmyteacher-ai.github.io/india/">
 <meta property="og:title" content="FindMyTeacher Agency | Find Verified Tutors Across India">
-<meta property="og:description" content="Founded by Ayush Pandey. Connect with verified tutors across India for home and online learning.">
+<meta property="og:description" content="Founded by Ayush Pandey. Find verified home tutors, online tutors and teaching opportunities across India.">
 <meta property="og:image" content="https://findmyteacher-ai.github.io/india/og-image.png">
-
+<meta property="og:image:secure_url" content="https://findmyteacher-ai.github.io/india/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_IN">
+  
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="FindMyTeacher Agency | Founded by Ayush Pandey">
-<meta name="twitter:description" content="India's tutor-matching platform — find verified teachers or students in your state.">
+<meta name="twitter:description" content="Find verified tutors and teachers anywhere in India.">
 <meta name="twitter:image" content="https://findmyteacher-ai.github.io/india/og-image.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,19 +61,48 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "FindMyTeacher Agency",
-  "alternateName": "FindMyTeacher",
-  "url": "https://findmyteacher-ai.github.io/india/",
-  "description": "FindMyTeacher Agency is India's tutor-matching platform connecting students, parents and teachers across all 28 states and 8 union territories.",
-  "foundingDate": "2026",
-  "founder": {
-    "@type": "Person",
-    "name": "Ayush Pandey",
-    "jobTitle": "Founder, FindMyTeacher Agency"
-  },
-  "areaServed": "IN",
-  "knowsAbout": ["Home Tuition", "Online Tutoring", "Teacher Recruitment", "Board Exam Coaching"]
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://findmyteacher-ai.github.io/india/#organization",
+      "name": "FindMyTeacher Agency",
+      "alternateName": "FindMyTeacher",
+      "url": "https://findmyteacher-ai.github.io/india/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://findmyteacher-ai.github.io/india/og-image.png"
+      },
+      "description": "FindMyTeacher Agency connects students, parents and teachers across India for home tuition, online tutoring and teaching opportunities.",
+      "foundingDate": "2026",
+      "founder": {
+        "@id": "https://findmyteacher-ai.github.io/india/#founder"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://findmyteacher-ai.github.io/india/#founder",
+      "name": "Ayush Pandey",
+      "jobTitle": "Founder",
+      "worksFor": {
+        "@id": "https://findmyteacher-ai.github.io/india/#organization"
+      },
+      "url": "https://findmyteacher-ai.github.io/india/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://findmyteacher-ai.github.io/india/#website",
+      "url": "https://findmyteacher-ai.github.io/india/",
+      "name": "FindMyTeacher Agency",
+      "publisher": {
+        "@id": "https://findmyteacher-ai.github.io/india/#organization"
+      },
+      "inLanguage": "en-IN"
+    }
+  ]
 }
 </script>
 <style>
