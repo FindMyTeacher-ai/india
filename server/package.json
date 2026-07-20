@@ -1,13 +1,20 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "FindMyTeacher Backend API",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "findmyteacher",
+    "express",
+    "mongodb",
+    "jwt",
+    "api"
+  ],
+  "author": "Ayush Pandey",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {

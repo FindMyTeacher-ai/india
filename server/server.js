@@ -4,7 +4,6 @@ const express = require("express");
 const connectDB = require("./config/db");
 
 const app = express();
-const PORT = 3000;
 
 // ==========================
 // Connect MongoDB
@@ -32,12 +31,14 @@ app.use(teacherRoutes);
 // Home Route
 // ==========================
 app.get("/", (req, res) => {
-  res.send("🚀 FindMyTeacher Backend Running!");
+  res.send("🚀 FindMyTeacher Backend API is Running Successfully!");
 });
 
 // ==========================
 // Start Server
 // ==========================
+const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
-  console.log(`🚀 Server running at http://localhost:${PORT}`);
+  console.log(`🚀 Server running on port ${PORT}`);
 });
